@@ -1,4 +1,4 @@
-# CS301-Final-Project
+# CS301-Final-Project - RUSHI PATEL CS301-103
 ![cs301 milestone 1 pic](https://user-images.githubusercontent.com/59149625/198851937-2b53ea13-2041-483c-8bf0-46e351638610.PNG)
 
 
