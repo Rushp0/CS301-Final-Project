@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cs301"
+version = "1.0.0"
+description = "CS301 Final Project"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+matplotlib = "^3.6.1"
+opencv-python = "^4.6.0.66"
+numpy = "^1.23.4"
+pillow = "^9.3.0"
+tensorflow = "^2.10.0"
+patchify = "^0.2.3"
+sklearn = "^0.0"
+segmentation-models = "^1.0.1"
+kaggle = "^1.5.12"
+nni = "^2.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
