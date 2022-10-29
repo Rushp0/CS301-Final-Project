@@ -1,0 +1,3 @@
+[submodule "python_for_microscopists"]
+	path = python_for_microscopists
+	url = https://github.com/bnsreenu/python_for_microscopists.git
