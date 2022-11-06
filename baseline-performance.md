@@ -1,5 +1,5 @@
 
-#Unet Explaination
+# Unet Explaination
 
 U-net is a type of convolutional network that makes use of fewer high quality training images to better and faster identify object in images given. U-net gets its name for its 'U' shaped network architechture (See below).
 
