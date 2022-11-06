@@ -19,6 +19,7 @@ U-net architecutre is useful when there is a lack of training data such as in th
 ![seg_img_7](https://user-images.githubusercontent.com/59149625/200174407-3b05ff41-1dcc-4a54-bb8e-5020d03777ea.png)
 ![seg_img_8](https://user-images.githubusercontent.com/59149625/200174408-2a4c81e7-bbc6-4791-9a4c-ccccf2ba469e.png)
 ![seg_img_9](https://user-images.githubusercontent.com/59149625/200174409-31f8a198-8f46-4be7-b861-b9ee81ae618b.png)
+![seg_img_10](https://user-images.githubusercontent.com/59149625/200174740-21d9f8e6-a509-48a5-9776-b16791e3672d.png)
 
 
 # B: Training and Validation Loss vs Epochs
