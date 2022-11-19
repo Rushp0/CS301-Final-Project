@@ -52,10 +52,7 @@ for path, subdirs, files in os.walk(root_directory):
                         #single_patch_img = (single_patch_img.astype('float32')) / 255. 
                         single_patch_img = single_patch_img[0] #Drop the extra unecessary dimension that patchify adds.                               
                         image_dataset.append(single_patch_img)
-                
-  
-                
-  
+            
  #Now do the same as above for masks
  #For this specific dataset we could have added masks to the above code as masks have extension png
 mask_dataset = []  
@@ -97,9 +94,7 @@ import numpy as np
 image_number = random.randint(0, len(image_dataset))
 plt.figure(figsize=(12, 6))
 plt.subplot(121)
-# plt.imshow(np.reshape(image_dataset[image_number], (patch_size, patch_size, 3)))
 plt.subplot(122)
-# plt.imshow(np.reshape(mask_dataset[image_number], (patch_size, patch_size, 3)))
 plt.show()
 
 
@@ -196,7 +191,7 @@ X_train, X_test, y_train, y_test = train_test_split(image_dataset, labels_cat, t
 from keras.models import load_model
 from  tensorflow.keras import metrics
 import tensorflow as tf
-model = load_model("milestone-2-v2", compile=False, custom_objects=None)
+model = load_model("milestone-3", compile=False, custom_objects=None)
 
 y_pred=model.predict(X_test)
 y_pred_argmax=np.argmax(y_pred, axis=3)
@@ -232,7 +227,6 @@ for i in range(50):
     precision.append(tp/(tp+fp+1))
     recall.append(tp+(tp+fn+1)) 
 
-
     plt.figure(figsize=(12, 8))
     plt.subplot(231)
     plt.title('Testing Image')
@@ -243,7 +237,7 @@ for i in range(50):
     plt.subplot(233)
     plt.title('Prediction on test image')
     plt.imshow(predicted_img)
-    # plt.show()
+
 
 print(precision)
 plt.plot(precision, range(len(precision)))
