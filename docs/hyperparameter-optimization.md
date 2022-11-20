@@ -14,8 +14,7 @@ BOHB works by using Hyperband optimation to determine how many configurations sh
 
 The algorithms then continues the path of Hyperband optimization and selects some budgets. The selection process for the next configuration is adapted from Bayesian Optimization (Algorithms Pseudocode in figure 1). Eventually through the optimization process more configurations are created with bigger and bigger budgets, but this is offset by BOHB using the model with the largest budget which has the most observations.
 
-<img width="1440" alt="Screen Shot 2022-11-17 at 5 04 21 PM" src="https://user-images.githubusercontent.com/59149625/202903357-4d7e26e7-cbc0-4dbe-8e42-808fdcd267ba.png">
-
+<img width="510" alt="Screen Shot 2022-11-20 at 8 04 27 AM" src="https://user-images.githubusercontent.com/59149625/202903423-489314b5-3b5f-44ec-ba20-5d145417f6d7.png">
 
 While BOHB has its own hyperparamters, these hyperparameters have little effect.
 
