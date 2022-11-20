@@ -1,5 +1,7 @@
 # BOHB
-BOHB is the method of combining Bayesian Optimization and Hyperband optimization to get the best parts of each optimization method. BOHB has stronger performance all of the time as well as fast convergence on the optimal configuration.
+BOHB is the method of combining Bayesian Optimization and Hyperband optimization to get the best parts of each optimization method. BOHB has stronger performance all of the time as well as fast convergence on the optimal configuration. The figure below shows how HOHB compares to other methods of optimization. BOHB is signifcantly faster.
+
+<img width="519" alt="Screen Shot 2022-11-20 at 8 05 46 AM" src="https://user-images.githubusercontent.com/59149625/202903502-a2d17b73-b323-4e98-bc9c-38fecd538082.png">
 
 To understand BOHB first we should look at its components, Bayesian Optimization and Hyperband optimization.
 
