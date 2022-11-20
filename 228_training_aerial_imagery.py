@@ -226,22 +226,13 @@ model.compile(optimizer='adam', loss=total_loss, metrics=metrics)
 history1 = model.fit(X_train, y_train, 
                     batch_size = 16, 
                     verbose=1, 
-                    epochs=2, 
+                    epochs=25, 
                     validation_data=(X_test, y_test), 
                     shuffle=False)
 
 print("model trained")
 # model.summary()
-
-
-##########################################################
-
-history1 = model.fit(X_train, y_train, 
-                    batch_size = 16, 
-                    verbose=1, 
-                    epochs=25, 
-                    validation_data=(X_test, y_test), 
-                    shuffle=False)
+model.save("milestone-3-v2")
 
 ###########################################################
 # plot the training and validation accuracy and loss at each epoch
@@ -256,10 +247,7 @@ plt.title('Training and validation loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
-plt.show()
-
-# model.save("milestone-2-v2")
-
+plt.savefig("Training and Validation Loss vs Epochs")
 acc = history.history['jacard_coef']
 val_acc = history.history['val_jacard_coef']
 
@@ -283,4 +271,3 @@ plt.plot(precision, range(len(precision)))
 plt.plot(recall, range(len(recall)))
 plt.title("Precision and Recall")
 plt.show()
-
