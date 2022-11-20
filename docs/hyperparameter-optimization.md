@@ -13,7 +13,9 @@ Bayesian optimization is used to find the optimal function when the function is 
 BOHB works by using Hyperband optimation to determine how many configurations should be evaluated. The configurations, instead of being random like in classic Hyperband optimization, are found via model-based search. Once the configurations are selected the algorithms continues following the path of Hyperband optimzation and successively halves the resources. The performance of all the configurations are then tracked to be used later.
 
 The algorithms then continues the path of Hyperband optimization and selects some budgets. The selection process for the next configuration is adapted from Bayesian Optimization (Algorithms Pseudocode in figure 1). Eventually through the optimization process more configurations are created with bigger and bigger budgets, but this is offset by BOHB using the model with the largest budget which has the most observations.
-![Figure 1](file:///Screen%20Shot%202022-11-20%20at%208.00.04%20AM.png)
+
+<img width="1440" alt="Screen Shot 2022-11-17 at 5 04 21 PM" src="https://user-images.githubusercontent.com/59149625/202903357-4d7e26e7-cbc0-4dbe-8e42-808fdcd267ba.png">
+
 
 While BOHB has its own hyperparamters, these hyperparameters have little effect.
 
