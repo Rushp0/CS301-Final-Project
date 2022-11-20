@@ -205,7 +205,7 @@ fp = 0
 fn = 0
 precision = []
 recall = []
-for i in range(50):
+for i in range(100):
     test_img_number = random.randint(0, len(X_test))
     test_img = X_test[test_img_number]
     ground_truth=y_test_argmax[test_img_number]
