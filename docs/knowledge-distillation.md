@@ -11,5 +11,4 @@ You can take a trained model and extract the knowledge from the vary large train
 The object of machine learning models is to generalize new data but this cant be done if the training model doesnt have the data needed to generalize, but using knowledge
 distillation we can train the smaller model to generalize data in the same way that the larger model would.
 
-Neural Networks use the softmax function to create probabilities of each class, using this we can transfer the knowledge to the smaller model. The smaller model is
-trained using a transfer set and the output of the softmax function, which has the probabilities of each class. 
+You can transfer knowledge from the larger model to the smaller model by training the smaller model on a tranfer set. By combining the knowledge of the ground truth for the transfer set and the softmax function output you can drastically improve the smaller model. The other method is to average two objective functions to train the smaller model on.
